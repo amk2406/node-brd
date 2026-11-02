@@ -1,5 +1,5 @@
 {
-  "name": "nodebrd",
+  "name": "brd-node",
   "version": "1.0.0",
   "description": "Advanced Node.js module for creating, reading, extracting and managing Binary Resources Data (.brd) archive files",
   "main": "dist/index.js",
@@ -7,7 +7,8 @@
   "bin": {
     "node-brd": "bin/node-brd.js",
     "nodebrd": "bin/node-brd.js",
-    "brd":"bin/node-brd.js"
+    "brd":"bin/node-brd.js",
+    "brd-node": "bin/node-brd.js"
   },
   "scripts": {
     "build": "tsc",
