@@ -1,0 +1,45 @@
+{
+  "name": "node-brd",
+  "version": "1.0.0",
+  "description": "Advanced Node.js module for creating, reading, extracting and managing Binary Resources Data (.brd) archive files",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "bin": {
+    "node-brd": "bin/node-brd.js",
+    "brd": "bin/node-brd.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "node --test test/*.test.js",
+    "cli": "node bin/node-brd.js"
+  },
+  "homepage": "https://github.com/amk2406/node-brd#readme",
+  "repository": {"type": "git", "url": "https://github.com/amk2406/node-brd.git"},
+  "keywords": [
+    "brd",
+    "binary-resources",
+    "archive",
+    "resources",
+    "pack",
+    "extract",
+    "asset-pack",
+    "resource-bundle",
+    "node-brd"
+  ],
+  "author": "Abdulhamid Muhammad Kabir",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.4.0"
+  },
+  "files": [
+    "dist",
+    "bin",
+    "README.md",
+    "LICENSE"
+  ]
+}
