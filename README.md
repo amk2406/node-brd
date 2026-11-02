@@ -1,8 +1,8 @@
-# node-brd
+# nodebrd
 
 **Binary Resources Data (`.brd`) archives for Node.js**
 
-`node-brd` is a zero-dependency module for creating, reading, extracting, updating and managing `.brd` files — a compact binary container format designed for packing application resources (images, configs, JSON, binary assets, etc.) into a single file.
+`nodebrd` is a zero-dependency module for creating, reading, extracting, updating and managing `.brd` files — a compact binary container format designed for packing application resources (images, configs, JSON, binary assets, etc.) into a single file.
 
 ---
 
@@ -25,13 +25,13 @@
 ## Installation
 
 ```bash
-npm install node-brd
+npm install nodebrd
 ```
 
 For global CLI usage:
 
 ```bash
-npm install -g node-brd
+npm install -g nodebrd
 ```
 
 ---
@@ -39,7 +39,7 @@ npm install -g node-brd
 ## Quick Start
 
 ```js
-const brd = require('node-brd');
+const brd = require('nodebrd');
 
 // 1. Create a new archive
 const archive = brd.create({ compress: true });
@@ -194,7 +194,7 @@ node-brd delete app.brd old.txt
 node-brd has app.brd images/icon.png
 ```
 
-You can also use the short command `brd` instead of `node-brd`.
+You can also use the short command `brd` instead of `node-brd` or `nodebrd`.
 
 ---
 
@@ -246,7 +246,7 @@ Concatenated resource payloads (raw or zlib-compressed).
 ## TypeScript
 
 ```ts
-import brd, { BrdArchive, CreateOptions, ResourceInfo } from 'node-brd';
+import brd, { BrdArchive, CreateOptions, ResourceInfo } from 'nodebrd';
 
 const archive: BrdArchive = brd.create({ compress: true });
 archive.add('config.json', '{"ok":true}');
